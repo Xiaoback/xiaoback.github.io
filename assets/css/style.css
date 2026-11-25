@@ -124,3 +124,20 @@ a { color: inherit; text-decoration: none; }
   .hero-links { gap: 20px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+
+/* Multi-page academic website */
+.site-header nav a.active { color: var(--ink); font-weight: 650; }
+.page-main { min-height: calc(100vh - 184px); padding-top: 74px; padding-bottom: 90px; }
+.page-title { padding-bottom: 38px; }
+.page-kicker { color: var(--blue); font-size: 13px; font-weight: 700; letter-spacing: .18em; margin: 0 0 10px; }
+.page-title h1 { font-family: var(--serif); font-size: clamp(48px, 5.5vw, 66px); font-weight: 400; letter-spacing: -.045em; line-height: 1.12; margin: 0; }
+.research-section { margin-top: 24px; }
+.research-section + .research-section { margin-top: 76px; }
+.research-section .section-heading { margin-bottom: 24px; }
+.research-section .section-heading h2 { font-size: clamp(32px, 3.5vw, 40px); }
+.page-main > .education-list { margin-top: 4px; }
+@media (max-width: 760px) {
+  .page-main { min-height: calc(100vh - 180px); padding-top: 48px; padding-bottom: 60px; }
+  .page-title { padding-bottom: 28px; }
+  .research-section + .research-section { margin-top: 54px; }
+}
